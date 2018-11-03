@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		233919B1218E06880079AE93 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233919AF218E06880079AE93 /* RecipeCell.swift */; };
+		233919B2218E06880079AE93 /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233919B0218E06880079AE93 /* RecipeCell.xib */; };
+		233919B5218E112B0079AE93 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233919B4218E112B0079AE93 /* Kingfisher.framework */; };
+		23B80E2B218D990600ED508F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B80E2A218D990600ED508F /* AppDelegate.swift */; };
+		23B80E2D218D990600ED508F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B80E2C218D990600ED508F /* ViewController.swift */; };
+		23B80E30218D990600ED508F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B80E2E218D990600ED508F /* Main.storyboard */; };
+		23B80E32218D990900ED508F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B80E31218D990900ED508F /* Assets.xcassets */; };
+		23B80E35218D990900ED508F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B80E33218D990900ED508F /* LaunchScreen.storyboard */; };
+		23B80E40218D990900ED508F /* KungFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B80E3F218D990900ED508F /* KungFoodTests.swift */; };
+		23B80E4B218D990900ED508F /* KungFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B80E4A218D990900ED508F /* KungFoodUITests.swift */; };
+		23B80E5F218DB99100ED508F /* common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B80E5D218DB99100ED508F /* common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23B80E3C218D990900ED508F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23B80E1F218D990600ED508F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23B80E26218D990600ED508F;
+			remoteInfo = KungFood;
+		};
+		23B80E47218D990900ED508F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23B80E1F218D990600ED508F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23B80E26218D990600ED508F;
+			remoteInfo = KungFood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23B80E60218DB99100ED508F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23B80E5F218DB99100ED508F /* common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		233919AF218E06880079AE93 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		233919B0218E06880079AE93 /* RecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
+		233919B4218E112B0079AE93 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		23B80E27218D990600ED508F /* KungFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KungFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B80E2A218D990600ED508F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23B80E2C218D990600ED508F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23B80E2F218D990600ED508F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23B80E31218D990900ED508F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23B80E34218D990900ED508F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23B80E36218D990900ED508F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B80E3B218D990900ED508F /* KungFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KungFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B80E3F218D990900ED508F /* KungFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KungFoodTests.swift; sourceTree = "<group>"; };
+		23B80E41218D990900ED508F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B80E46218D990900ED508F /* KungFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KungFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B80E4A218D990900ED508F /* KungFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KungFoodUITests.swift; sourceTree = "<group>"; };
+		23B80E4C218D990900ED508F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B80E58218D994E00ED508F /* common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = common.framework; sourceTree = "<group>"; };
+		23B80E5D218DB99100ED508F /* common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = common.framework; path = "../../common/build/xcode-frameworks/common.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23B80E24218D990600ED508F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233919B5218E112B0079AE93 /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B80E38218D990900ED508F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B80E43218D990900ED508F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		233919B3218E112A0079AE93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				233919B4218E112B0079AE93 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23B80E1E218D990600ED508F = {
+			isa = PBXGroup;
+			children = (
+				23B80E58218D994E00ED508F /* common.framework */,
+				23B80E5D218DB99100ED508F /* common.framework */,
+				23B80E29218D990600ED508F /* KungFood */,
+				23B80E3E218D990900ED508F /* KungFoodTests */,
+				23B80E49218D990900ED508F /* KungFoodUITests */,
+				23B80E28218D990600ED508F /* Products */,
+				233919B3218E112A0079AE93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23B80E28218D990600ED508F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23B80E27218D990600ED508F /* KungFood.app */,
+				23B80E3B218D990900ED508F /* KungFoodTests.xctest */,
+				23B80E46218D990900ED508F /* KungFoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23B80E29218D990600ED508F /* KungFood */ = {
+			isa = PBXGroup;
+			children = (
+				23B80E2A218D990600ED508F /* AppDelegate.swift */,
+				23B80E2C218D990600ED508F /* ViewController.swift */,
+				23B80E2E218D990600ED508F /* Main.storyboard */,
+				23B80E31218D990900ED508F /* Assets.xcassets */,
+				23B80E33218D990900ED508F /* LaunchScreen.storyboard */,
+				23B80E36218D990900ED508F /* Info.plist */,
+				233919AF218E06880079AE93 /* RecipeCell.swift */,
+				233919B0218E06880079AE93 /* RecipeCell.xib */,
+			);
+			path = KungFood;
+			sourceTree = "<group>";
+		};
+		23B80E3E218D990900ED508F /* KungFoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				23B80E3F218D990900ED508F /* KungFoodTests.swift */,
+				23B80E41218D990900ED508F /* Info.plist */,
+			);
+			path = KungFoodTests;
+			sourceTree = "<group>";
+		};
+		23B80E49218D990900ED508F /* KungFoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23B80E4A218D990900ED508F /* KungFoodUITests.swift */,
+				23B80E4C218D990900ED508F /* Info.plist */,
+			);
+			path = KungFoodUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23B80E26218D990600ED508F /* KungFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B80E4F218D990900ED508F /* Build configuration list for PBXNativeTarget "KungFood" */;
+			buildPhases = (
+				23B80E5C218D999C00ED508F /* ShellScript */,
+				233919B6218E11430079AE93 /* ShellScript */,
+				23B80E23218D990600ED508F /* Sources */,
+				23B80E24218D990600ED508F /* Frameworks */,
+				23B80E25218D990600ED508F /* Resources */,
+				23B80E60218DB99100ED508F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KungFood;
+			productName = KungFood;
+			productReference = 23B80E27218D990600ED508F /* KungFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23B80E3A218D990900ED508F /* KungFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B80E52218D990900ED508F /* Build configuration list for PBXNativeTarget "KungFoodTests" */;
+			buildPhases = (
+				23B80E37218D990900ED508F /* Sources */,
+				23B80E38218D990900ED508F /* Frameworks */,
+				23B80E39218D990900ED508F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23B80E3D218D990900ED508F /* PBXTargetDependency */,
+			);
+			name = KungFoodTests;
+			productName = KungFoodTests;
+			productReference = 23B80E3B218D990900ED508F /* KungFoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23B80E45218D990900ED508F /* KungFoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B80E55218D990900ED508F /* Build configuration list for PBXNativeTarget "KungFoodUITests" */;
+			buildPhases = (
+				23B80E42218D990900ED508F /* Sources */,
+				23B80E43218D990900ED508F /* Frameworks */,
+				23B80E44218D990900ED508F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23B80E48218D990900ED508F /* PBXTargetDependency */,
+			);
+			name = KungFoodUITests;
+			productName = KungFoodUITests;
+			productReference = 23B80E46218D990900ED508F /* KungFoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23B80E1F218D990600ED508F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Daio;
+				TargetAttributes = {
+					23B80E26218D990600ED508F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					23B80E3A218D990900ED508F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 23B80E26218D990600ED508F;
+					};
+					23B80E45218D990900ED508F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 23B80E26218D990600ED508F;
+					};
+				};
+			};
+			buildConfigurationList = 23B80E22218D990600ED508F /* Build configuration list for PBXProject "KungFood" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23B80E1E218D990600ED508F;
+			productRefGroup = 23B80E28218D990600ED508F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23B80E26218D990600ED508F /* KungFood */,
+				23B80E3A218D990900ED508F /* KungFoodTests */,
+				23B80E45218D990900ED508F /* KungFoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23B80E25218D990600ED508F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B80E35218D990900ED508F /* LaunchScreen.storyboard in Resources */,
+				23B80E32218D990900ED508F /* Assets.xcassets in Resources */,
+				23B80E30218D990600ED508F /* Main.storyboard in Resources */,
+				233919B2218E06880079AE93 /* RecipeCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B80E39218D990900ED508F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B80E44218D990900ED508F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233919B6218E11430079AE93 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		23B80E5C218D999C00ED508F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/../../common/build/xcode-frameworks\"\n./gradlew :common:build\n./gradlew :common:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23B80E23218D990600ED508F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233919B1218E06880079AE93 /* RecipeCell.swift in Sources */,
+				23B80E2D218D990600ED508F /* ViewController.swift in Sources */,
+				23B80E2B218D990600ED508F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B80E37218D990900ED508F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B80E40218D990900ED508F /* KungFoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B80E42218D990900ED508F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B80E4B218D990900ED508F /* KungFoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23B80E3D218D990900ED508F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23B80E26218D990600ED508F /* KungFood */;
+			targetProxy = 23B80E3C218D990900ED508F /* PBXContainerItemProxy */;
+		};
+		23B80E48218D990900ED508F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23B80E26218D990600ED508F /* KungFood */;
+			targetProxy = 23B80E47218D990900ED508F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23B80E2E218D990600ED508F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B80E2F218D990600ED508F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23B80E33218D990900ED508F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B80E34218D990900ED508F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23B80E4D218D990900ED508F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23B80E4E218D990900ED508F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23B80E50218D990900ED508F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RUACP22HMJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../common/build/xcode-frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = KungFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.daio.KungFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23B80E51218D990900ED508F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RUACP22HMJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../common/build/xcode-frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = KungFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.daio.KungFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23B80E53218D990900ED508F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KungFoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.daio.KungFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KungFood.app/KungFood";
+			};
+			name = Debug;
+		};
+		23B80E54218D990900ED508F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KungFoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.daio.KungFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KungFood.app/KungFood";
+			};
+			name = Release;
+		};
+		23B80E56218D990900ED508F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KungFoodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.daio.KungFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KungFood;
+			};
+			name = Debug;
+		};
+		23B80E57218D990900ED508F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KungFoodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.daio.KungFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KungFood;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23B80E22218D990600ED508F /* Build configuration list for PBXProject "KungFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B80E4D218D990900ED508F /* Debug */,
+				23B80E4E218D990900ED508F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B80E4F218D990900ED508F /* Build configuration list for PBXNativeTarget "KungFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B80E50218D990900ED508F /* Debug */,
+				23B80E51218D990900ED508F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B80E52218D990900ED508F /* Build configuration list for PBXNativeTarget "KungFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B80E53218D990900ED508F /* Debug */,
+				23B80E54218D990900ED508F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B80E55218D990900ED508F /* Build configuration list for PBXNativeTarget "KungFoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B80E56218D990900ED508F /* Debug */,
+				23B80E57218D990900ED508F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23B80E1F218D990600ED508F /* Project object */;
+}
